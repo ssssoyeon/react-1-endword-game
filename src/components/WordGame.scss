@@ -1,0 +1,72 @@
+//색상변수
+$m-color: rgb(126, 83, 244);
+$bdr-color: rgb(175, 175, 175);
+$hv-color: rgb(51, 4, 63);
+$t-color: #666;
+
+//규격변수
+$fs-large: 32px;
+$fs-medium: 24px;
+$fs-small: 16px;
+$bdr-radius: 5px;
+$pd-small: 10px;
+$pd-default: 20px;
+$mg-default: 20px;
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: $pd-default;
+    border: 1px solid $bdr-color;
+    border-radius: $bdr-radius;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
+
+    h2 {
+        font-size: $fs-large;
+        color: $m-color;
+    }
+
+    .current-word {
+        font-size: $fs-large;
+        font-weight: bold;
+        color: $t-color;
+        padding: $pd-default 0;
+    }
+
+    input {
+        width: 200px;
+        padding: $pd-small;
+        border: 2px solid $bdr-color;
+        border-radius: $bdr-radius;
+        transition: border .3s;
+        outline: none;
+
+        &:focus {
+            border-color: $m-color;
+        }
+    }
+
+    button {
+        margin: 10px;
+        border: none;
+        padding: $pd-small $pd-small*2;
+        font-size: $fs-small;
+        background-color: $m-color;
+        color: white;
+        border-radius: $bdr-radius;
+        cursor: pointer;
+        transition: background .3s;
+
+        &:hover {
+            background-color: $hv-color;
+        }
+    }
+
+    .message {
+        margin-top: $mg-default;
+        font-size: $fs-small;
+        color: $t-color;
+    }
+
+
+}
